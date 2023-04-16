@@ -2,9 +2,9 @@ package com.example.recyclerviewexamplo
 
 data class Persona(
     val nombre: String,
-    val cargo: String,
     val correo: String,
-    val photo: String,
+    val cargo: String,
     val descripcion:String,
-    val rol:String
+    val photo: String,
+    val rol:String,
 )

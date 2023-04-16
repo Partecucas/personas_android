@@ -24,8 +24,8 @@ class PersonaAdapter(
 
     override fun getItemCount(): Int = personList.size
 
-    fun updateSuperHeroes(superheroList: List<Persona>){
-        this.personList = superheroList
+    fun uptdatePersona(personList: List<Persona>){
+        this.personList = personList
         notifyDataSetChanged()
     }
 }

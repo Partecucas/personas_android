@@ -1,145 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30px"
+    android:maxWidth="1030px"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="20px"
+    android:layout_marginRight="20px"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity=""
-    xmlns:tools="http://schemas.android.com/tools">
+    >
 
     <LinearLayout
         android:id="@+id/lyimg"
-        android:layout_width="375dp"
-        android:layout_height="248dp"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:background="@color/white"
+        android:gravity="center"
+        android:background="@color/lgreen"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="162dp"
-            android:layout_height="match_parent"
-            android:background="@color/green"
-            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imgpersona"
-                android:layout_width="138dp"
-                android:layout_height="223dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:background="@color/black" />
-
-
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgpersona"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:layout_width="193dp"
-            android:layout_height="match_parent"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:background="@color/green"
+            android:background="@color/white"
             android:gravity="center"
             android:orientation="vertical">
 
-
-            <LinearLayout
-                android:layout_width="174dp"
+            <TextView
+                android:id="@+id/rol"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:gravity="center_horizontal">
-
-                <TextView
-                    android:id="@+id/rol"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity=""
-                    android:textColor="@color/green"
-
-                    android:textSize="20dp"
-                    tools:text="Administrativo" />
-
-            </LinearLayout>
+                android:background="@color/green"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                tools:text="Leon Kenedy" />
 
             <TextView
                 android:id="@+id/nombre"
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:layout_constraintStart_toEndOf="@+id/imgpersona"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Leidy Johana ospina Garcia" />
-
-            <TextView
-                android:id="@+id/cargo"
-                android:layout_width="155dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:layout_constraintStart_toEndOf="@+id/imgpersona"
-                app:layout_constraintTop_toBottomOf="@+id/nombre"
-                tools:text="Aris" />
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                tools:text="Resident Evil 4" />
 
             <TextView
                 android:id="@+id/correo"
-                android:layout_width="155dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center"
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="70dp"
+                android:textSize="17dp"
+                tools:text="Leon Federico" />
+
+
+
+            <TextView
+                android:id="@+id/cargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:text="Leon Federico" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDelete"
+                android:background="@color/red"
                 android:textColor="@color/white"
-                android:textSize="12dp"
-                app:layout_constraintStart_toEndOf="@+id/imgpersona"
-                app:layout_constraintTop_toBottomOf="@+id/cargo"
-                tools:text="Aris" />
-
-
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Eliminar" />
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="381dp"
-        android:layout_height="75dp"
-        android:background="@color/white"
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="344dp"
+        android:layout_height="72dp"
+        android:background="@color/green"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lyimg">
-
-        <TextView
-            android:id="@+id/descripcion"
-            android:layout_width="266dp"
-            android:layout_height="53dp"
-            android:layout_gravity="center"
-            android:textColor="@color/green"
-            android:textSize="15dp"
-            tools:text="Dar soporte técnico a equipos de cómputo" />
-
-        <Button
-            android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:backgroundTint="@color/white"
-            android:text="BORRAR :("
-            android:textColor="@color/green"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgpersona" />
-    </LinearLayout>
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/lyimg"
+        tools:text="Personaje principal de la trama cuya mision sera rescatar a ashley de las mandos de lord sadler" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

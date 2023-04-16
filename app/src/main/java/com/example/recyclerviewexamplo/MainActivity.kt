@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.etFilter.addTextChangedListener { userFilter ->
-            val superheroesFiltered =
-                personaMutableList.filter { superhero ->
-                    superhero.rol.lowercase().contains(userFilter.toString().lowercase())
-                }
-            adapter.updateSuperHeroes(superheroesFiltered)
+        binding.etFilter.addTextChangedListener{userFilter->
+            val personafiltro=
+            personaMutableList.filter { Persona ->
+                Persona.rol.lowercase().contains(userFilter.toString().lowercase())
+            }
+            adapter.uptdatePersona(personafiltro)
         }
         initRecyclerView()
     }
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             "???????",
             "https://pbs.twimg.com/profile_images/1037281659727634432/5x2XVPwB_400x400.jpg",
             "sapo",
-            "a"
+            "a",
         )
 
         personaMutableList.add(index = 3, persona)
